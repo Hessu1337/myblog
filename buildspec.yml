@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.3
 
 env:
   variables:
@@ -9,6 +9,7 @@ phases:
   install:
     runtime-versions:
       docker: 18
+      golang: 1.13
     commands:
       - wget "https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_${hugo_version}_Linux-64bit.deb"
       - sudo dpkg -i hugo_${hugo_version}_Linux-64bit.deb
