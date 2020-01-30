@@ -5,4 +5,3 @@ draft: false
 ---
 
 Hello world!
-Deployed from pipeline
