@@ -17,6 +17,6 @@ phases:
   build:
     commands:
       - hugo
-      - hugo deploy
+      - hugo deploy --maxDeletes -1
     finally:
       - echo "Script finished running"
