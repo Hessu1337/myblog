@@ -2,6 +2,7 @@ baseURL = "https://d1t6kr0yfdny60.cloudfront.net/"
 languageCode = "fr-FR"
 title = "Gonzague"
 theme = "hyde"
+uglyurls = true
 
 [Menus]
   main = [
