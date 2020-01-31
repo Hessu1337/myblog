@@ -1,6 +1,6 @@
 baseURL = "https://d1t6kr0yfdny60.cloudfront.net/"
 languageCode = "fr-FR"
-title = "My New Hugo Site"
+title = "Gonzague"
 theme = "hyde"
 
 [Menus]
