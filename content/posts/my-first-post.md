@@ -6,4 +6,4 @@ draft: false
 
 Hello world!
 
-![Example image](/static/images/AWS-CodeBuild.png)
+![Example image](/images/AWS-CodeBuild.png)
