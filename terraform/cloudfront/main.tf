@@ -1,15 +1,8 @@
-variable "website_endpoint" {
-  type = string
-}
-variable "bucket" {
-  type = string
-}
-
 resource "aws_cloudfront_distribution" "d" {
+  wait_for_deployment = false
   origin {
-    domain_name         = var.website_endpoint
-    origin_id           = "S3-${var.bucket}"
-    wait_for_deployment = false
+    domain_name = var.website_endpoint
+    origin_id   = "S3-${var.bucket}"
 
     custom_origin_config {
       http_port              = 80
@@ -41,7 +34,7 @@ resource "aws_cloudfront_distribution" "d" {
       }
     }
 
-    viewer_protocol_policy = "allow-all"
+    viewer_protocol_policy = "redirect-to-https"
     min_ttl                = 0
     default_ttl            = 3600
     max_ttl                = 86400
