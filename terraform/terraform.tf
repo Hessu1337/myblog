@@ -19,6 +19,6 @@ module "codebuild" {
 module "cloudfront" {
   source = "./cloudfront"
 
-  website_endpoint = module.s3.website_endpoint
-  bucket           = module.s3.bucket
+  bucket_domain_name = module.s3.bucket_domain_name
+  bucket             = module.s3.bucket
 }

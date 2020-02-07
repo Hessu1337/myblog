@@ -1,4 +1,4 @@
-variable "website_endpoint" {
+variable "bucket_domain_name" {
   type = string
 }
 variable "bucket" {

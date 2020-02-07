@@ -1,4 +1,4 @@
-baseURL = "https://d11kvp5ejzn9yk.cloudfront.net/"
+baseURL = "https://www.gonzague.dev/"
 languageCode = "fr-FR"
 title = "Gonzague"
 theme = "hyde"
@@ -12,25 +12,3 @@ uglyurls = true
 
 [params]
   description = "My personal blog where I present my work and stuff"
-
-[deployment]
-order = [".jpg$", ".gif$"]
-
-[[deployment.targets]]
-name = "s3deployment"
-URL = "s3://blog.gonzague.pagin?region=eu-west-3"
-
-[[deployment.matchers]]
-#  Cache static assets for 1 year.
-pattern = "^.+\\.(js|css|svg|ttf)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = true
-
-[[deployment.matchers]]
-pattern = "^.+\\.(png|jpg)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = false
-
-[[deployment.matchers]]
-pattern = "^.+\\.(html|xml|json)$"
-gzip = true

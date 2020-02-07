@@ -13,10 +13,9 @@ phases:
       - dpkg -i hugo_${hugo_version}_Linux-64bit.deb
     finally:
       - hugo version
-      - ls
   build:
     commands:
-      - hugo
-      - hugo deploy --maxDeletes -1
+      - cd public
+      - aws s3 sync . s3://www.gonzague.dev/
     finally:
       - echo "Script finished running"

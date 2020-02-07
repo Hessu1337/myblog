@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "d" {
   wait_for_deployment = false
   origin {
-    domain_name = var.website_endpoint
+    domain_name = var.bucket_domain_name
     origin_id   = "S3-${var.bucket}"
 
     custom_origin_config {
