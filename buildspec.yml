@@ -15,7 +15,7 @@ phases:
       - hugo version
   build:
     commands:
-      - cd public
-      - aws s3 sync . s3://www.gonzague.dev/
+      - hugo
+      - cd public && aws s3 sync . s3://www.gonzague.dev/
     finally:
       - echo "Script finished running"
