@@ -1,7 +1,7 @@
 ---
 title: "Terraform This 2"
 date: 2020-02-08T09:58:39+01:00
-draft: true
+draft: false
 
 ---
 
