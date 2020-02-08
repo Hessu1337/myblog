@@ -12,3 +12,4 @@ uglyurls = true
 
 [params]
   description = "My personal blog where I present my work and stuff"
+  themeColor = "theme-base-0d"
