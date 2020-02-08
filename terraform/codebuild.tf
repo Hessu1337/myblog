@@ -41,8 +41,8 @@ resource "aws_iam_role_policy" "p" {
         "s3:*"
       ],
       "Resource": [
-        "arn:aws:s3:::${var.s3bucket}",
-        "arn:aws:s3:::${var.s3bucket}/*"
+        "arn:aws:s3:::${var.www_domain_name}",
+        "arn:aws:s3:::${var.www_domain_name}/*"
       ]
     }
   ]
@@ -62,7 +62,7 @@ resource "aws_codebuild_project" "cb" {
 
   cache {
     type     = "S3"
-    location = var.bucket
+    location = var.www_domain_name
   }
 
   environment {
@@ -76,7 +76,7 @@ resource "aws_codebuild_project" "cb" {
   logs_config {
     s3_logs {
       status   = "ENABLED"
-      location = "${var.s3bucket}/build-log"
+      location = "${var.www_domain_name}/build-log"
     }
   }
 
