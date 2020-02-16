@@ -3,6 +3,7 @@ languageCode = "fr-FR"
 title = "Gonzague"
 theme = "hyde"
 uglyurls = true
+googleAnalytics = "UA-158620326-1"
 
 [Menus]
   main = [
