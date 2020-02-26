@@ -17,7 +17,7 @@ It will help me to share some content and practice my written english too, hope 
 
 ## Getting started
 
-The main component is gohugo, a simple framework written in goland, it is easy to use the binary let you 
+The main component is gohugo, a simple framework written in golang, it is easy to use the binary let you 
 
 - Generate a static website with posts generated from markdown (md) files.
 - Deploy it to a target, Simple Storage Service (S3) from Amazon Web Services (AWS) in our case
